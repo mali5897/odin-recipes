@@ -1,0 +1,58 @@
+
+#one {
+    background-color: skyblue;
+    color: pink;
+    text-align: center;
+    font-family: "fantasy";
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin: 10px auto;
+    font-size: 32px; 
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+  }
+  .centered-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+  #two, #three, #four {
+    font-family: "fantasy";
+    color: #333;
+    margin: 15px 0 10px;
+    text-align: center;
+    font-size: 24px;
+  }
+  .one {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px auto;
+    max-width: 80%;
+  }
+  .list, .list-two {
+    margin: 0 auto;
+    padding: 0;
+    list-style-position: inside;
+    font-size: 16px;
+    max-width: 80%;
+    line-height: 1.5;
+  }
+  .list li, .list-two li {
+    margin: 5px 0;
+  }
+  a {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 16px;
+    text-decoration: none;
+    color: skyblue;
+  }
+  a:hover {
+    text-decoration: underline;
+  }

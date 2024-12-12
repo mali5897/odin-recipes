@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+  font-family: "fantasy", sans-serif;
+}
+.one {
+  background-color: skyblue;
+  color: pink;
+  text-align: center;
+  font-family: "fantasy";
+  padding:10px 20px;
+  border-radius: 15px;
+  margin: 0 auto;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.list {
+  list-style none; 
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.list {
+  background-color: pink;
+  color: skyblue;
+  text-align: center;
+  list-style: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+};
+
+.list li a {
+  text-decloration: none;
+  color: skyblue;
+}
