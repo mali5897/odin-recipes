@@ -1,58 +1,107 @@
 
-#one {
-    background-color: skyblue;
-    color: pink;
-    text-align: center;
-    font-family: "fantasy";
-    padding: 5px 15px;
-    border-radius: 15px;
-    margin: 10px auto;
-    font-size: 32px; 
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #000428, #004e92);
+  font-family: "fantasy", sans-serif;
+  color: #ffffff;
+  line-height: 1.6;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Main Header */
+.one {
+  background: linear-gradient(90deg, #ff7eb3, #ff758c, #42e3f5, #00d4ff, #ff758c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  text-transform: uppercase;
+  margin: 20px auto;
+  animation: gradientAnimation 5s infinite;
+}
+
+/* Image Styling */
+.image-container {
+  margin: 20px auto;
+}
+
+.centered-image {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+}
+
+/* Section Titles */
+#two, #three, #four {
+  font-size: 24px;
+  color: #00d4ff;
+  margin: 15px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Description Paragraph */
+p.one {
+  text-align: justify;
+  font-size: 16px;
+  max-width: 80%;
+  margin: 10px auto;
+  color: #ffffff;
+  line-height: 1.8;
+}
+
+/* Ingredient and Step Lists */
+.list, .list-two {
+  list-style: none;
+  padding: 0;
+  margin: 10px auto;
+  max-width: 80%;
+}
+
+.list li, .list-two li {
+  margin: 10px 0;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+/* Back to Home Link */
+a {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  border: 2px solid #42e3f5;
+  border-radius: 10px;
+  background: transparent;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #42e3f5;
+  transform: scale(1.05);
+}
+
+/* Holographic Gradient Animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
   }
-  .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px auto;
+  50% {
+    background-position: 100% 50%;
   }
-  .centered-image {
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
+  100% {
+    background-position: 0% 50%;
   }
-  #two, #three, #four {
-    font-family: "fantasy";
-    color: #333;
-    margin: 15px 0 10px;
-    text-align: center;
-    font-size: 24px;
-  }
-  .one {
-    text-align: justify;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 10px auto;
-    max-width: 80%;
-  }
-  .list, .list-two {
-    margin: 0 auto;
-    padding: 0;
-    list-style-position: inside;
-    font-size: 16px;
-    max-width: 80%;
-    line-height: 1.5;
-  }
-  .list li, .list-two li {
-    margin: 5px 0;
-  }
-  a {
-    display: block;
-    text-align: center;
-    margin: 20px auto;
-    font-size: 16px;
-    text-decoration: none;
-    color: skyblue;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
+}
